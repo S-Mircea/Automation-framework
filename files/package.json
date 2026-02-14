@@ -1,0 +1,42 @@
+{
+  "name": "automation-framework",
+  "version": "1.0.0",
+  "description": "Reusable automation testing framework using Playwright and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:e2e": "playwright test tests/e2e",
+    "test:api": "playwright test tests/api",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project='Mobile Chrome' --project='Mobile Safari'",
+    "test:parallel": "playwright test --workers=4",
+    "test:serial": "playwright test --workers=1",
+    "report": "playwright show-report",
+    "report:html": "playwright show-report test-results/html-report",
+    "codegen": "playwright codegen https://automationbookstore.dev",
+    "install:browsers": "playwright install",
+    "clean": "rm -rf test-results playwright-report dist",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "automation",
+    "testing",
+    "playwright",
+    "typescript",
+    "e2e",
+    "api-testing",
+    "test-framework"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.2.3",
+    "typescript": "^5.9.3"
+  }
+}

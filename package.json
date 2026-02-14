@@ -1,0 +1,20 @@
+{
+  "name": "automation-framework",
+  "version": "1.0.0",
+  "description": "Automation testing framework",
+  "scripts": {
+    "test": "playwright test",
+  "test:headed": "playwright test --headed",
+  "test:debug": "playwright test --debug",
+  "test:ui": "playwright test --ui",
+  "test:search": "playwright test tests/e2e/search.spec.ts",
+  "test:homepage": "playwright test tests/e2e/homepage.spec.ts",
+  "report": "playwright show-report",
+  "codegen": "playwright codegen https://automationbookstore.dev"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.2.3",
+    "typescript": "^5.9.3"
+  }
+}
