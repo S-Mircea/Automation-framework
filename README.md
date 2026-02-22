@@ -261,7 +261,8 @@ Future enhancements planned for this framework:
 ## Contact
 
 **Mircea Serban**
-- Email: [mirceaserban1981@gmail.com](mailto:mirceaserban1981@gmail.com)
+- Email: [mirceaserban1981@gmail.com](mailto:mircea.serban.dev@gmail.com
+)
 - GitHub: [@S-Mircea](https://github.com/S-Mircea)
 - LinkedIn: [Connect with me](https://www.linkedin.com/in/mircea-serban) *(Add your LinkedIn if available)*
 
