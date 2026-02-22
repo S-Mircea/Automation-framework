@@ -1,4 +1,4 @@
-# 🧪 E2E Automation Testing Framework
+# E2E Automation Testing Framework
 
 [![Tests](https://img.shields.io/badge/tests-6%20passing-brightgreen)](https://github.com/S-Mircea/automation-framework)
 [![Framework](https://img.shields.io/badge/framework-Playwright-45ba4b)](https://playwright.dev/)
@@ -7,21 +7,21 @@
 
 > A professional end-to-end automation testing framework built with **Playwright** and **TypeScript**, demonstrating industry-standard practices in test automation and quality assurance.
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [About The Project](#-about-the-project)
-- [Key Features](#-key-features)
-- [Technologies](#-technologies)
-- [Getting Started](#-getting-started)
-- [Project Structure](#-project-structure)
-- [Test Coverage](#-test-coverage)
-- [Running Tests](#-running-tests)
-- [Test Results](#-test-results)
-- [What I Learned](#-what-i-learned)
-- [Roadmap](#-roadmap)
-- [Contact](#-contact)
+- [About The Project](#about-the-project)
+- [Key Features](#key-features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Test Coverage](#test-coverage)
+- [Running Tests](#running-tests)
+- [Test Results](#test-results)
+- [What I Learned](#what-i-learned)
+- [Roadmap](#roadmap)
+- [Contact](#contact)
 
-## 🎯 About The Project
+## About The Project
 
 This is my first automation testing framework, built to demonstrate proficiency in modern test automation practices. The framework implements the **Page Object Model (POM)** design pattern and tests the [Automation Bookstore](https://automationbookstore.dev) web application.
 
@@ -31,28 +31,28 @@ This is my first automation testing framework, built to demonstrate proficiency 
 - Proves hands-on experience with industry-standard tools (Playwright, TypeScript)
 - Highlights problem-solving and technical learning abilities
 
-## ✨ Key Features
+## Key Features
 
-### 🏗️ Architecture & Design
+### Architecture & Design
 - **Page Object Model (POM)** - Clean separation between test logic and page interactions
 - **TypeScript** - Type-safe code with IntelliSense support
 - **Modular Design** - Reusable components and base classes
 - **DRY Principles** - Don't Repeat Yourself methodology throughout
 
-### 🧪 Testing Capabilities
+### Testing Capabilities
 - **Cross-browser Support** - Chrome, Firefox, Safari, Edge
 - **Parallel Execution** - Faster test runs with concurrent workers
 - **Smart Waits** - Network idle and dynamic content handling
 - **Detailed Assertions** - Comprehensive validation of UI elements and data
 - **Screenshot on Failure** - Automatic visual debugging aid
 
-### 📊 Reporting & CI/CD
+### Reporting & CI/CD
 - **HTML Reports** - Beautiful, interactive test reports
 - **Test Artifacts** - Screenshots and traces for debugging
 - **CI/CD Ready** - Can be integrated with GitHub Actions, Jenkins, etc.
 - **Console Logging** - Detailed execution information
 
-## 🛠️ Technologies
+## Technologies
 
 | Technology | Purpose |
 |------------|---------|
@@ -61,10 +61,9 @@ This is my first automation testing framework, built to demonstrate proficiency 
 | **[Node.js](https://nodejs.org/)** | JavaScript runtime environment |
 | **[Git](https://git-scm.com/)** | Version control for tracking changes and collaboration |
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
-
 Ensure you have the following installed:
 - **Node.js** (v18 or higher) - [Download](https://nodejs.org/)
 - **npm** (comes with Node.js)
@@ -93,7 +92,7 @@ Ensure you have the following installed:
    npm test
    ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 automation-framework/
@@ -109,12 +108,12 @@ automation-framework/
 ├── test-results/                # Test execution artifacts
 ├── playwright-report/           # HTML test reports
 ├── playwright.config.ts         # Playwright configuration
-├── tsconfig.json               # TypeScript configuration
-├── package.json                # Dependencies and scripts
-└── README.md                   # Project documentation
+├── tsconfig.json                # TypeScript configuration
+├── package.json                 # Dependencies and scripts
+└── README.md                    # Project documentation
 ```
 
-### 🏛️ Page Object Model Structure
+### Page Object Model Structure
 
 **BasePage.ts** - Contains reusable methods:
 - Navigation helpers
@@ -128,7 +127,7 @@ automation-framework/
 - Element locators
 - Page-specific methods
 
-## 🧪 Test Coverage
+## Test Coverage
 
 ### Homepage Validation Tests (`homepage.spec.ts`)
 
@@ -146,7 +145,7 @@ automation-framework/
 | **Search Filtering** | Tests search functionality with keyword "Java" | ✓ Results filtered correctly<br>✓ Displayed count ≤ initial count<br>✓ All results contain search term |
 | **Search Reset** | Verifies clearing search restores all items | ✓ All books displayed after clear<br>✓ Count matches initial state |
 
-## 🎮 Running Tests
+## Running Tests
 
 ### Basic Commands
 
@@ -189,17 +188,17 @@ npx playwright test tests/e2e/homepage.spec.ts
 npx playwright test --headed --slow-mo=1000
 ```
 
-## 📈 Test Results
+## Test Results
 
 ```
 Running 6 tests using 3 workers
 
-✓ [chromium] › homepage.spec.ts:6:3 › should load homepage successfully (2.1s)
-✓ [chromium] › homepage.spec.ts:21:3 › should display books on homepage (1.8s)
-✓ [chromium] › homepage.spec.ts:32:3 › should get all book titles (1.9s)
-✓ [chromium] › homepage.spec.ts:48:3 › should click on first book (2.3s)
-✓ [chromium] › search.spec.ts:6:3 › should filter books by search term (2.7s)
-✓ [chromium] › search.spec.ts:33:3 › should show all books when search is cleared (2.4s)
+  ✓  [chromium] › homepage.spec.ts:6:3 › should load homepage successfully (2.1s)
+  ✓  [chromium] › homepage.spec.ts:21:3 › should display books on homepage (1.8s)
+  ✓  [chromium] › homepage.spec.ts:32:3 › should get all book titles (1.9s)
+  ✓  [chromium] › homepage.spec.ts:48:3 › should click on first book (2.3s)
+  ✓  [chromium] › search.spec.ts:6:3 › should filter books by search term (2.7s)
+  ✓  [chromium] › search.spec.ts:33:3 › should show all books when search is cleared (2.4s)
 
   6 passed (13.2s)
 ```
@@ -213,36 +212,36 @@ Running 6 tests using 3 workers
 | **Repeatability** | Tedious | Instant | Can run unlimited times |
 | **Regression Testing** | Time-consuming | Automated | Continuous validation |
 
-## 🎓 What I Learned
+## What I Learned
 
 Through building this framework, I gained practical experience in:
 
 ### Testing Concepts
-- ✅ **Test Automation Fundamentals** - Understanding when and what to automate
-- ✅ **Page Object Model (POM)** - Industry-standard design pattern for test maintainability
-- ✅ **Test Case Design** - Writing effective, focused test scenarios
-- ✅ **Assertion Strategies** - Comprehensive validation techniques
-- ✅ **Test Data Management** - Handling dynamic content and data extraction
+- **Test Automation Fundamentals** - Understanding when and what to automate
+- **Page Object Model (POM)** - Industry-standard design pattern for test maintainability
+- **Test Case Design** - Writing effective, focused test scenarios
+- **Assertion Strategies** - Comprehensive validation techniques
+- **Test Data Management** - Handling dynamic content and data extraction
 
 ### Technical Skills
-- ✅ **Playwright Framework** - Modern E2E testing with auto-waiting and reliable locators
-- ✅ **TypeScript** - Type-safe programming for robust test code
-- ✅ **Asynchronous JavaScript** - Handling promises and async/await patterns
-- ✅ **CSS Selectors & XPath** - Effective element location strategies
-- ✅ **Version Control (Git)** - Code management and collaboration basics
+- **Playwright Framework** - Modern E2E testing with auto-waiting and reliable locators
+- **TypeScript** - Type-safe programming for robust test code
+- **Asynchronous JavaScript** - Handling promises and async/await patterns
+- **CSS Selectors & XPath** - Effective element location strategies
+- **Version Control (Git)** - Code management and collaboration basics
 
 ### Software Development Practices
-- ✅ **Clean Code Principles** - Writing readable, maintainable code
-- ✅ **DRY Methodology** - Avoiding code duplication through reusable components
-- ✅ **Documentation** - Creating clear, professional project documentation
-- ✅ **Problem-Solving** - Debugging test failures and handling edge cases
+- **Clean Code Principles** - Writing readable, maintainable code
+- **DRY Methodology** - Avoiding code duplication through reusable components
+- **Documentation** - Creating clear, professional project documentation
+- **Problem-Solving** - Debugging test failures and handling edge cases
 
 ### Professional Skills
-- ✅ **Self-Learning** - Independently researching and implementing new technologies
-- ✅ **Attention to Detail** - Identifying edge cases and potential issues
-- ✅ **Project Organization** - Structuring projects for scalability and maintainability
+- **Self-Learning** - Independently researching and implementing new technologies
+- **Attention to Detail** - Identifying edge cases and potential issues
+- **Project Organization** - Structuring projects for scalability and maintainability
 
-## 🔮 Roadmap
+## Roadmap
 
 Future enhancements planned for this framework:
 
@@ -259,23 +258,22 @@ Future enhancements planned for this framework:
 - [ ] **Advanced Reporting** - Integrate with Allure or ReportPortal
 - [ ] **Database Validation** - Add database testing capabilities
 
-## 📫 Contact
+## Contact
 
 **Mircea Serban**
-
-- 📧 Email: [mirceaserban1981@gmail.com](mailto:mirceaserban1981@gmail.com)
-- 💼 GitHub: [@S-Mircea](https://github.com/S-Mircea)
-- 🔗 LinkedIn: [Connect with me](https://www.linkedin.com/in/mircea-serban) *(Add your LinkedIn if available)*
+- Email: [mirceaserban1981@gmail.com](mailto:mirceaserban1981@gmail.com)
+- GitHub: [@S-Mircea](https://github.com/S-Mircea)
+- LinkedIn: [Connect with me](https://www.linkedin.com/in/mircea-serban) *(Add your LinkedIn if available)*
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Automation Bookstore](https://automationbookstore.dev) - Practice website for test automation
 - [Playwright Documentation](https://playwright.dev/docs/intro) - Excellent learning resources
@@ -285,7 +283,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 <div align="center">
 
-**⭐ If you found this project helpful, please consider giving it a star! ⭐**
+**If you found this project helpful, please consider giving it a star!**
 
 *This project demonstrates my commitment to learning modern test automation practices and building quality software.*
 
