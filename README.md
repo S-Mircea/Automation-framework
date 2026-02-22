@@ -283,7 +283,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 <div align="center">
 
-**If you found this project helpful, please consider giving it a star!**
 
 *This project demonstrates my commitment to learning modern test automation practices and building quality software.*
 
